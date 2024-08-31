@@ -965,7 +965,7 @@ body::before {
   z-index: 1; /* Ensures the content is above the blurred background */
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  background-color: rgba(10, 30, 39, 0.8); /* Slightly transparent background for better readability */
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background for better readability */
   padding: 20px;
   font-size: large;
   letter-spacing: 0.3px;
