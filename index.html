@@ -29,41 +29,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <style>
-                /* Ensure the container for the CommonNinja component is centered */
-                #commonninja_container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0 auto;
-                    padding: 20px;
-                    max-width: 100%;
-                    box-sizing: border-box;
-                }
-        
-                /* Ensure the inner component is centered */
-                .commonninja_component {
-                    width: 100%;
-                    max-width: 800px; /* Adjust this as needed */
-                }
-        
-                /* Responsive adjustments */
-                @media (max-width: 768px) {
-                    #commonninja_container {
-                        padding: 10px;
-                    }
-                    .commonninja_component {
-                        max-width: 100%;
-                    }
-                }
-        
-                /* Hide the "Free Visitor Counter Widget" text */
-                .commonninja_component a[href*="commonninja"],
-                .commonninja_component a[href*="visitor-counter"] {
-                    display: none !important;
-                }
-            </style>
-            
+    
 </head>
 <body>
 
@@ -178,12 +144,7 @@
           </div>
         </div>
         </div>
-
-       
 </section>
-
-
-
 <br><br><br>
         <!-- Footer Section -->
         <footer class="section footer" id="c6">
@@ -214,23 +175,7 @@
 </main>
 
 
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const observer = new MutationObserver(function(mutations) {
-                mutations.forEach(function(mutation) {
-                    const unwantedElements = document.querySelectorAll('.commonninja_component a[href*="commonninja"], .commonninja_component a[href*="visitor-counter"]');
-                    unwantedElements.forEach(function(element) {
-                        element.style.display = 'none';
-                    });
-                });
-            });
-    
-            const targetNode = document.querySelector('.commonninja_component');
-            if (targetNode) {
-                observer.observe(targetNode, { childList: true, subtree: true });
-            }
-        });
-    </script>
+
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/scrollreveal.js"></script>
 <script src="js/script.js"></script>
