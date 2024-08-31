@@ -185,29 +185,5 @@
 <script src="js/scrollreveal.js"></script>
 <script src="js/script.js"></script>
 
-<script>
-    function updateVisitorCount() {
-    // Retrieve the current visitor count from localStorage
-    let visitorCount = localStorage.getItem('visitorCount');
-
-    // If no count is stored, initialize it to 0
-    if (visitorCount === null) {
-        visitorCount = 0;
-    }
-
-    // Convert to an integer and increment the count
-    visitorCount = parseInt(visitorCount) + 1;
-
-    // Store the updated count back in localStorage
-    localStorage.setItem('visitorCount', visitorCount);
-
-    // Display the updated count on the webpage
-    document.getElementById('count').textContent = visitorCount;
-}
-
-// Call the function to update and display the visitor count
-updateVisitorCount();
-
-</script>
 </body>
 </html>
