@@ -982,3 +982,20 @@ body::before {
   margin: 5px 10px;
   line-height: 1.6;
 }
+
+
+.aboutus {
+  font-size: 2rem; /* Default size for larger screens */
+}
+
+@media (max-width: 768px) {
+  .aboutus {
+      font-size: 2rem; /* Smaller size for tablets and mobile devices */
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus {
+      font-size: 1.5rem; /* Even smaller size for mobile devices */
+  }
+}
