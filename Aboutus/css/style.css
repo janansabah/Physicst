@@ -967,7 +967,6 @@ body::before {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent background for better readability */
   padding: 20px;
-  font-size: large;
   letter-spacing: 0.3px;
   text-align: justify;
   line-height: 1.6;
